@@ -23,4 +23,12 @@
             android:id="@+id/action_loginTabFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/signUpTabFragment"
+        android:name="com.example.tsechacksapp.SignUpTabFragment"
+        android:label="SignUpTabFragment" >
+        <action
+            android:id="@+id/action_signUpTabFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

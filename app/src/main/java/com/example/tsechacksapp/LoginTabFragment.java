@@ -2,7 +2,9 @@ package com.example.tsechacksapp;
 
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,14 +20,18 @@ import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.tsechacksapp.authentication.FirebaseServices;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class LoginTabFragment extends Fragment {
 
+    private static final String TAG = "Success";
     private FirebaseAuth mAuth;
     NavController navController;
     EditText userEmail,userPass;
@@ -35,7 +41,6 @@ public class LoginTabFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         mAuth=FirebaseAuth.getInstance();
 
     }
@@ -43,12 +48,12 @@ public class LoginTabFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-
-        FirebaseUser currUser=mAuth.getCurrentUser();
-        if (currUser!=null){
-            navController=NavHostFragment.findNavController(this);
-            navController.navigate(R.id.action_loginTabFragment_to_homeFragment);
+        user=mAuth.getCurrentUser();
+        if (user!=null){
+            //NavHostFragment.findNavController(LoginTabFragment.this).navigate(R.id.action_loginTabFragment_to_homeFragment);
+            startActivity(new Intent(getActivity(),MainActivity.class));
         }
+
     }
 
     @Override
@@ -67,22 +72,40 @@ public class LoginTabFragment extends Fragment {
 
 
 
-        FirebaseServices fs=new FirebaseServices();
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String mailStr=userEmail.getText().toString();
+                String passStr=userPass.getText().toString();
 
-                String mail=userEmail.getText().toString();
-                String pass=userPass.getText().toString();
+                mAuth.signInWithEmailAndPassword(mailStr,passStr).addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            Log.d(TAG, "signInWithEmail:success");
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            //NavHostFragment.findNavController(LoginTabFragment.this).navigate(R.id.action_loginTabFragment_to_homeFragment);
+                            Toast.makeText(getActivity(), "Signed in successfully", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getActivity(),MainActivity.class));
+                        }
+                        else {
+                            Log.w("Failed", "signInWithEmail:failure", task.getException());
+                            Toast.makeText(getActivity(), "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+                            //updateUI(null);
+                        }
+                    }
+                });
 
-                if (!(mail.isEmpty() && pass.isEmpty())){
-                    user=fs.loginUserWithEmail(mAuth,mail,pass);
-                }
-                else{
-                    Toast.makeText(getActivity(), "Enter your credentials", Toast.LENGTH_SHORT).show();
-                }
             }
         });
+
+
+
+    }
+
+    private void updateUI(FirebaseUser user) {
 
     }
 }
