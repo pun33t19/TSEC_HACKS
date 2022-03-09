@@ -77,6 +77,7 @@ public class LoginTabFragment extends Fragment {
             public void onClick(View view) {
                 String mailStr=userEmail.getText().toString();
                 String passStr=userPass.getText().toString();
+                
 
                 mAuth.signInWithEmailAndPassword(mailStr,passStr).addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
                     @Override
