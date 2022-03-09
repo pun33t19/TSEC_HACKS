@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.HomeFragment"
-    android:background="#E5E5E5">
+    android:background="#E5E5E5"
+    tools:ignore="ExtraText">
 
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtxtLearningConceptsWithBase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_medium"
@@ -17,17 +19,21 @@
         android:layout_marginEnd="54dp"
         android:layout_marginTop="64dp"
         android:textColor="#272626"
-        android:textSize="36sp" 
-            />
-    <androidx.cardview.widget.CardView
-        android:id="@+id/CardView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+        android:textSize="36sp" />
 
 
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/mtxtLearningConceptsWithBase"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout_1"/>
 
 
-
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
