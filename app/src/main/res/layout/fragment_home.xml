@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment"
+    android:background="#E5E5E5">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="10dp"
+        android:text="@string/learning_concepts_with_ease"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginTop="64dp"
+        android:textColor="#272626"
+        android:textSize="36sp" 
+            />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
