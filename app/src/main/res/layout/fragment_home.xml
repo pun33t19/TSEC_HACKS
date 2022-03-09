@@ -12,12 +12,19 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_medium"
         android:padding="10dp"
-        android:text="Learning Concepts with ease"
+        android:text="@string/learning_concepts_with_ease"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="54dp"
         android:layout_marginTop="64dp"
         android:textColor="#272626"
-        android:textSize="36sp" />
+        android:textSize="36sp" 
+            />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
 
 
 
