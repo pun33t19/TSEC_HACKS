@@ -3,5 +3,9 @@
 
 
     <corners android:radius="20dp"/>
+<<<<<<< HEAD
+    <solid android:color="@color/light_grey"/>
+=======
     <solid android:color="@color/black"/>
+>>>>>>> 0cced9158d2da85a2835c02f4ee7c65183dbc5d2
 </shape>
