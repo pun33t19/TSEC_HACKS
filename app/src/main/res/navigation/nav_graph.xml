@@ -15,4 +15,12 @@
         android:name="com.example.tsechacksapp.ui.EventFragment"
         android:label="fragment_topics"
         tools:layout="@layout/fragment_event" />
+    <fragment
+        android:id="@+id/loginTabFragment"
+        android:name="com.example.tsechacksapp.LoginTabFragment"
+        android:label="LoginTabFragment" >
+        <action
+            android:id="@+id/action_loginTabFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
