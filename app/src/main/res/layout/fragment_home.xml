@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,16 +11,41 @@
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="54dp"
         android:fontFamily="@font/roboto_medium"
         android:padding="10dp"
         android:text="@string/learning_concepts_with_ease"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginTop="64dp"
         android:textColor="#272626"
         android:textSize="36sp" />
 
+    <TextView
+        android:id="@+id/txtTopics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/topics"
+        android:layout_below="@+id/mtxtLearningConceptsWithBase"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="21sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/black"
+        />
 
+<<<<<<< HEAD
+=======
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTopics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtTopics"
+        android:layout_margin="5dp"
+
+        />
 
 
 </RelativeLayout>
+>>>>>>> 0356f4e9024ff4e99675a2b70434cf21aa97160b
+
+
