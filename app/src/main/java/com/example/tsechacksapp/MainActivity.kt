@@ -9,8 +9,10 @@ import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.example.tsechacksapp.adapters.ViewPagerAdapter
-import com.example.tsechacksapp.ui.EventFragment
-import com.example.tsechacksapp.ui.HomeFragment
+import com.example.tsechacksapp.ui.*
+import com.google.android.material.bottomnavigation.BottomNavigationItemView
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -30,8 +32,8 @@ class MainActivity : AppCompatActivity() {
 
         viewPager.adapter=adapter
         tabLayout.setupWithViewPager(viewPager)
-    }
 
+    }
 
 }
 

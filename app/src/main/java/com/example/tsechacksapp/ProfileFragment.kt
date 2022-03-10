@@ -14,7 +14,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.tsechacksapp.R
 
 
-class HomeFragment : Fragment() {
+class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
 
 
@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

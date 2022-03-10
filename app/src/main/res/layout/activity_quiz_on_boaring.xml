@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C9B9B"
+    android:backgroundTint="#E5E5E5"
+    tools:context=".QuizOnBoaring">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_Pager"
+        android:layout_width="451dp"
+        android:layout_height="739dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="455dp"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="#D1D1D1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/prevBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/button_bg"
+            android:text="Back"
+            android:textColor="#000000"
+            android:visibility="invisible"
+            app:backgroundTint="#E5E5E5" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginLeft="170dp"
+            android:background="@drawable/button_bg"
+            android:text="Next"
+            android:textColor="#000000"
+            app:backgroundTint="#E5E5E5" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

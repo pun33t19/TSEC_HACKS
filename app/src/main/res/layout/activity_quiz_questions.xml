@@ -27,7 +27,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:src=""
             tools:src="@tools:sample/avatars"/>
 
         <TextView

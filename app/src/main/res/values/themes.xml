@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.TsecHacksApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.TsecHacksApp" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#6A6868</item>
         <item name="colorPrimaryVariant">#E5E5E5</item>

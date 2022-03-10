@@ -13,55 +13,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- TODO: Note that this list item will be used in a grid view which requires a
-                different layout because the list will have two columns of cards.
-                This means that the information within the card must stack the vertically
-                since there is less room in terms of width.-->
-
-        <!-- TODO: Create an ImageView resource for the image of the dog.
-               The height should be 194dp
-               The width should match the with of the card
-               The scaleType should be set to centerCrop-->
-
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/iv_grid_image"
             android:layout_width="match_parent"
             android:layout_height="194dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars"/>
 
         <TextView
             android:id="@+id/tv_reward_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="15dp"
             android:text="Reward name"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_grid_image" />
 
         <ImageView
-            android:id="@+id/image_profile"
+            android:id="@+id/iv_coin"
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             android:src="@drawable/money"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_grid_image" />
         <TextView
             android:id="@+id/tv_reward_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<!--            android:layout_marginStart="8dp"-->
-<!--            android:layout_marginTop="8dp"-->
-<!--            android:layout_marginBottom="16dp"-->
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="16dp"
             android:text="300"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_grid_image"
+            app:layout_constraintEnd_toStartOf="@+id/iv_coin"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
