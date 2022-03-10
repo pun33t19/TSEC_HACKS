@@ -24,6 +24,14 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="register">Register</string>
     <string name="learning_concepts_with_ease">Learning Concepts with ease</string>
+    <string name="topics">Topics</string>
+    <string name="stack">Stack</string>
+    <string name="queue">Queue</string>
+    <string name="quick_sort">Quick Sort</string>
+    <string name="bubble_sort">Bubble Sort</string>
+    <string name="list_item">List Item</string>
+    <string name="ctrl_intelligence">Ctrl Intelligence</string>
+
 
 
 </resources>

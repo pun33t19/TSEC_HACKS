@@ -9,9 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TsecHacksApp">
+<<<<<<< HEAD
 
         <activity android:name=".QuizOnBoaring"
             android:exported="true">
+=======
+        <activity
+            android:name=".New"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" >
+
+>>>>>>> 53ccf2171c0e3bec627daeb1d9118e87507483e8
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,16 +30,17 @@
 
         </activity>
 
+<<<<<<< HEAD
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
+=======
+>>>>>>> 53ccf2171c0e3bec627daeb1d9118e87507483e8
         <activity
             android:name=".MainActivity"
             android:exported="true"/>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+        
     </application>
 
 </manifest>

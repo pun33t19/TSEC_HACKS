@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/yasht/Downloads/TSEC_HACKS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16" />
         <entry key="..\:/Users/yasht/Downloads/TSEC_HACKS/app/src/main/res/drawable/button_bg.xml" value="0.1" />
         <entry key="..\:/Users/yasht/Downloads/TSEC_HACKS/app/src/main/res/drawable/ic_back.xml" value="0.2045" />
@@ -30,6 +31,39 @@
         <entry key="..\:/Users/yasht/Downloads/TSEC_HACKS/app/src/main/res/layout/grid_list_item.xml" value="0.264" />
         <entry key="..\:/Users/yasht/Downloads/TSEC_HACKS/app/src/main/res/layout/slide_layout.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/yasht/Downloads/TSEC_HACKS/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2359375" />
+=======
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/drawable/button_bg.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/drawable/option_border_bg.xml" value="0.24814814814814815" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/layout/activity_main.xml" value="0.10054347826086957" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/layout/activity_new.xml" value="0.23731884057971014" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/layout/activity_quiz_questions.xml" value="0.264" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/layout/fragment_event.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/layout/fragment_home.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/layout/fragment_login_tab.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/layout/fragment_logout_page.xml" value="0.176" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/layout/fragment_profile.xml" value="0.23731884057971014" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/layout/fragment_sign_up_tab.xml" value="0.23731884057971014" />
+        <entry key="..\:/Users/Puneet/AndroidStudioProjects/TsecHacksApp/app/src/main/res/layout/grid_list_item.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/drawable/button_bg.xml" value="0.159" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/drawable/edit_text_bg.xml" value="0.159" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/drawable/vie_bg.xml" value="0.124" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/activity_et.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/activity_login.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/activity_login2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/custom_grid_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/fragment_event.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/fragment_login_tab.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/fragment_login_tab2.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/fragment_quiz_questions.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/fragment_sign_up_tab.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/fragment_sign_up_tab2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/fragment_topic.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/recycler_topic_single_row.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prasa/AndroidStudioProjects/TSEC_HACKS/app/src/main/res/layout/vie_bg.xml" value="0.11302083333333333" />
+>>>>>>> 53ccf2171c0e3bec627daeb1d9118e87507483e8
       </map>
     </option>
   </component>

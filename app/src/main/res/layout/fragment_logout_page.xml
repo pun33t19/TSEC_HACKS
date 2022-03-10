@@ -45,7 +45,11 @@
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:fontFamily="sans-serif-condensed-medium"
+=======
+        android:fontFamily="@font/roboto_medium"
+>>>>>>> 53ccf2171c0e3bec627daeb1d9118e87507483e8
         android:text="FName LName"
         android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -59,7 +63,11 @@
         android:id="@+id/tv_editprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:fontFamily="sans-serif-condensed-medium"
+=======
+        android:fontFamily="@font/roboto_medium"
+>>>>>>> 53ccf2171c0e3bec627daeb1d9118e87507483e8
         android:text="Edit Profile"
         android:textSize="30sp"
         android:layout_margin="20sp"
@@ -72,7 +80,11 @@
         android:id="@+id/tv_points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:fontFamily="sans-serif-condensed-medium"
+=======
+        android:fontFamily="@font/roboto_medium"
+>>>>>>> 53ccf2171c0e3bec627daeb1d9118e87507483e8
         android:text="Points"
         android:textSize="30sp"
         android:layout_margin="20sp"
@@ -85,7 +97,11 @@
         android:id="@+id/tv_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:fontFamily="sans-serif-condensed-medium"
+=======
+        android:fontFamily="@font/roboto_medium"
+>>>>>>> 53ccf2171c0e3bec627daeb1d9118e87507483e8
         android:text="Logout"
         android:textSize="30sp"
         android:layout_margin="20sp"
